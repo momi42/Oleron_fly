@@ -1,0 +1,6 @@
+# Locked dependencies (mypy, flake8, pytest) [cite: 352, 359, 378]
+
+mypy
+flake8
+pytest
+pygame

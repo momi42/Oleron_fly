@@ -1,0 +1,8 @@
+nb_drones: 2
+start_hub: start 0 0
+end_hub: goal 10 10
+hub: corridorA 4 3 [zone=priority max_drones=2]
+hub: tunnelB 7 4 [zone=normal]
+connection: start-corridorA
+connection: corridorA-tunnelB [max_link_capacity=2]
+connection: tunnelB-goal
