@@ -4,6 +4,7 @@
 
 PYTHON := python3
 MAIN := src/main.py
+MAP := maps/easy/01_linear_path.txt
 
 .PHONY: install run debug clean lint lint-strict help
 
@@ -17,7 +18,7 @@ install:
 # Execute the main simulation (Example usage: make run MAP=maps/easy1.txt)
 run:
 	@if [ -z "$(MAP)" ]; then \
-		$(PYTHON) $(MAIN) test_map.txt; \
+		$(PYTHON) $(MAIN) $(MAP); \
 	else \
 		$(PYTHON) $(MAIN) $(MAP); \
 	fi
